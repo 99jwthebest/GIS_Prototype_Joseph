@@ -19,7 +19,7 @@ enum class EDirectionalInput : uint8
 
 
 class USpringArmComponent;
-class UCameraComponent;
+//class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
@@ -31,13 +31,13 @@ class AFightingTempCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	/** Camera boom positioning the camera behind the character */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	USpringArmComponent* CameraBoom;
+	///** Camera boom positioning the camera behind the character */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//USpringArmComponent* CameraBoom;
 
-	/** Follow camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	UCameraComponent* FollowCamera;
+	///** Follow camera */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//UCameraComponent* FollowCamera;
 
 
 	//------NOTE THIS CHARACTER AND BLUEPRINT IS LOCAL MULTIPLAYER ONLY! ENTIRELY SERVER SIDE-----//
@@ -121,9 +121,9 @@ protected:
 	virtual void Tick(float DeltaSeconds) override;
 
 public:
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	///** Returns CameraBoom subobject **/
+	//FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	///** Returns FollowCamera subobject **/
+	//FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
 
